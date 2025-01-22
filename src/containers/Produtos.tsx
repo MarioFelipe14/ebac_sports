@@ -10,6 +10,7 @@ type Props = {
 
 const ProdutosComponent = ({ favoritos, favoritar }: Props) => {
   const { data: produtos, isLoading } = useGetProdutosQuery()
+
   const produtoEstaNosFavoritos = (produto: ProdutoType) => {
     const produtoId = produto.id
     const IdsDosFavoritos = favoritos.map((f) => f.id)

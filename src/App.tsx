@@ -31,11 +31,7 @@ function App() {
       <GlobalStyle />
       <div className="container">
         <Header favoritos={favoritos} />
-        <Produtos
-          produtos={produtos}
-          favoritos={favoritos}
-          favoritar={favoritar}
-        />
+        <Produtos favoritos={favoritos} favoritar={favoritar} />
       </div>
     </Provider>
   )
